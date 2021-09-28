@@ -1,6 +1,8 @@
 # student-management
 This is an application for student management.
 
+Database used - postgres
+
 Follow the steps for setuping of this project
 * pip install -r requirement.txt
 * Add your database name,username,password in settings.py
