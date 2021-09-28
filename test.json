@@ -1,0 +1,158 @@
+//  create teacher
+//METHOD : POST
+//API URL : http://127.0.0.1:8000/api/teacher/
+//INPUT DATA
+{
+    "name": "Sanjay"
+}
+//OUTPUT DATA
+{
+    "status": 0,
+    "msg": "Teacher created successfully."
+}
+
+
+//  list teachers
+//METHOD : GET
+//API URL : http://127.0.0.1:8000/api/teacher/
+//OUTPUT DATA
+[
+    {
+        "id": 1,
+        "name": "Angel"
+    },
+    {
+        "id": 2,
+        "name": "Sanjay"
+    }
+]
+
+
+//  create student
+//METHOD : POST
+//API URL : http://127.0.0.1:8000/api/student/
+//INPUT DATA
+{
+    "name": "Nikhil",
+    "age": 15,
+    "gender": "M",
+    "teacher": 1
+}
+//OUTPUT DATA
+{
+    "status": 0,
+    "msg": "Student created successfully."
+}
+
+
+//  list student
+//METHOD : GET
+//API URL : http://127.0.0.1:8000/api/student/
+//OUTPUT DATA
+[
+    {
+        "id": 1,
+        "name": "Nikhil",
+        "age": 15,
+        "gender": "M",
+        "teacher": 1,
+        "teacher_name": "Angel"
+    }
+]
+
+
+//  get student details
+//METHOD : PUT
+//API URL : http://127.0.0.1:8000/api/student/1/
+//INPUT DATA
+{
+    "name": "Nikhil NN",
+    "age": 17,
+    "gender": "M",
+    "teacher": 1
+}
+//OUTPUT DATA
+{
+    "status": 0,
+    "msg": "Student details updated successfully."
+}
+
+
+//  delete student details
+//METHOD : DELETE
+//API URL : http://127.0.0.1:8000/api/student/1/
+//OUTPUT DATA
+{
+    "status": 0,
+    "msg": "Student deleted successfully."
+}
+
+
+
+//  save mark of a student
+//METHOD : POST
+//API URL : http://127.0.0.1:8000/api/mark/
+//INPUT DATA
+{
+    "student": 2,
+    "maths": 15,
+    "science": 5,
+    "history": 10,
+    "term": 1
+}
+//OUTPUT DATA
+{
+    "status": 0,
+    "msg": "Marks entered successfully."
+}
+
+
+
+//   marklist of  students
+//METHOD : GET
+//API URL : http://127.0.0.1:8000/api/mark/
+//OUTPUT DATA
+{
+    "status": 0,
+    "data": [
+        {
+            "id": 1,
+            "student_id": 2,
+            "student_name": "Aswin",
+            "maths": 15,
+            "science": 5,
+            "history": 10,
+            "term": 1,
+            "total": 30,
+            "created_date": "Sep 28 2021,09:57 PM"
+        }
+    ]
+}
+
+
+//  update mark of a student
+//METHOD : POST
+//API URL : http://127.0.0.1:8000/api/mark/1
+//INPUT DATA
+{
+    "student": 2,
+    "maths": 25,
+    "science": 5,
+    "history": 10,
+    "term": 1
+}
+//OUTPUT DATA
+{
+    "status": 0,
+    "msg": "Marks updated successfully."
+}
+
+
+//  delete student marks
+//METHOD : DELETE
+//API URL : http://127.0.0.1:8000/api/mark/1/
+//OUTPUT DATA
+{
+    "status": 0,
+    "msg": "Marks deleted successfully."
+}
