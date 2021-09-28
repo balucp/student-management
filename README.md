@@ -7,5 +7,5 @@ This is an application for student management.
 | /api/teacher/ | GET | list all the teachers |
 | /api/student/ | GET | list all the students |
 | /api/student/ | POST | create new students |
-| /api/student/<id> | PUT | update student details |
+| /api/student/\<id\> | PUT | update student details |
 
