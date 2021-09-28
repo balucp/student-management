@@ -47,7 +47,7 @@ class StudentAPI(generics.ListCreateAPIView):
 
     def post(self,request):
 
-         """This function will create Student"""
+        """This function will create Student"""
 
         try:
             data = request.data
