@@ -1,0 +1,4 @@
+venv
+project_student/__pycache__
+app_student/migrations
+app_student/__pycache__
