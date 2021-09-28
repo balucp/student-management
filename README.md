@@ -8,7 +8,7 @@ Follow the steps for setuping of this project
 * python manage.py migrate
 * python manage.py runserver
 
-The following are the endpoints in this project. Refer *Test.json* for data format of APIs
+The following are the endpoints in this project. Refer **Test.json** for data format of APIs
 
 | Endpoints | Method | Description|
 | --- | --- | --- |
