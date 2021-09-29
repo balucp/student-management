@@ -4,13 +4,13 @@ This is an application for student management.
 Database used - postgres
 
 Follow the steps for setuping of this project
-* pip install -r requirement.txt
+* run command **pip install -r requirement.txt**
 * Add your database name,username,password in settings.py
-* ./manage.py makemigrations app_tutorial
-* python manage.py migrate
-* python manage.py runserver
+* run command **./manage.py makemigrations app_tutorial**
+* run command **python manage.py migrate**
+* run command **python manage.py runserver**
 
-The following are the endpoints in this project. Refer **Test.json** for data format of APIs
+The following are the endpoints in this project. Refer **test.json** for data format of APIs
 
 | Endpoints | Method | Description|
 | --- | --- | --- |
